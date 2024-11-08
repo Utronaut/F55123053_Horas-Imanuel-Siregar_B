@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first ever website</title>
+
+    <style>
+        /* Global */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            background-color: #ca8484b3;
+            border-radius: 5px;
+        }
+
+        /* Main */
+        main {
+            padding: 20px;
+            background-color: white;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .bingkai-gambar{                    /* Bingkai */
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 18px solid #ca8484b3;
+        }
+    
+        .bingkai-gambar img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }    
+
+        .imagebox1{                          /* Mengsejajarkan image */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+        }
+
+        /* About Me */
+        .about-me {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-me h3 {
+            margin-bottom: 15px;
+        }
+
+        /* Portfolio */
+        .portfolio {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .portfolio .project {
+            width: 280px;
+            margin: 15px;
+            border: 2px solid #ca8484b3;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .portfolio .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Warmest Salute to You!</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about-me">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+    <!-- About Me -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <div class="imagebox1">
+            <div class="bingkai-gambar">
+                <img src="Gambar/Horas (jas).jpg" alt="Horas Imanuel Siregar">
+            </div>
+        </div>
+        <div class="about-me">
+            <p>Hello! I am Horas Imanuel Siregar, a college student at Tadulako University. I am pursuing a degree in engineering with a special interest in Web Development and Cloud Engineering. I have a strong passion for problem-solving and public speaking. I believe in continuous growth and aim to become the best version of myself.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio">
+            <div class="project">
+                <img src="Gambar/Project 1.jpeg" alt="Project 1">
+                <p><strong>Graphic Design</strong></p>
+            </div>
+            <div class="project">
+                <img src="Gambar/Project 2.jpg" alt="Project 2">
+                <p><strong>Streetwear Clothing</strong></p>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer Section -->
+<footer>
+    <p>Contact Information</p>
+    <p>Email : <a href="mailto:vultronaut@gmail.com">vultronaut@gmail.com</a></p>
+    <p>Follow me on <a href="https://instagram.com/rashmanuel_" target="_blank">Instagram</a> or <a href="https://github.com/Utronaut" target="_blank">GitHub</a></p>
+</footer>
+
+</body>
+</html>
